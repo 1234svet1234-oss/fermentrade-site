@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FermenTrade — Оптовые поставки металлопроката и промышленной химии</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #181c24;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border-color: #27272a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(15, 17, 21, 0.9);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--text-main);
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .phone-header {
+            font-weight: 600;
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .hero {
+            padding: 100px 5% 80px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 50px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .contacts {
+            padding: 80px 5%;
+            text-align: center;
+            background-color: var(--card-bg);
+            border-top: 1px solid var(--border-color);
+            margin-top: 50px;
+        }
+
+        .contacts h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contacts p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">FERMEN<span>TRADE</span></div>
+        <a href="tel:+79000000000" class="phone-header" id="headerPhone">+7 (900) 000-00-00</a>
+    </header>
+
+    <section class="hero">
+        <h1>Надежные оптовые поставки металлопроката и сырья</h1>
+        <p>Комплексное снабжение предприятий, промышленных объектов и строительных площадок. Прямые контракты, стабильные отгрузки и гибкие условия сотрудничества.</p>
+        <a href="#contacts" class="btn">Запросить коммерческое предложение</a>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3>Черный металлопрокат</h3>
+            <p>Широкий ассортимент сортового, фасонного и листового проката от ведущих заводов-изготовителей.</p>
+        </div>
+        <div class="card">
+            <h3>Промышленная химия</h3>
+            <p>Поставка качественных химических компонентов и реагрантов для производственных нужд.</p>
+        </div>
+        <div class="card">
+            <h3>Логистика и сроки</h3>
+            <p>Оперативная отгрузка партий любого объема с соблюдением всех договорных обязательств.</p>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <h2>Свяжитесь с отделом продаж</h2>
+        <p>Готовы обсудить ваши потребности и подготовить индивидуальный расчет.</p>
+        <a href="tel:+79000000000" class="btn" id="mainPhone">Позвонить нам</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ООО «ФерменТрейд». Все права защищены.</p>
+    </footer>
+
+    <script>
+        // Укажите ваш реальный номер телефона ниже в кавычках (например, '+79271234567')
+        const userPhone = "+7 (900) 000-00-00"; 
+        
+        document.getElementById('headerPhone').textContent = userPhone;
+        document.getElementById('headerPhone').href = "tel:" + userPhone.replace(/[^+\d]/g, '');
+        document.getElementById('mainPhone').textContent = "Позвонить: " + userPhone;
+        document.getElementById('mainPhone').href = "tel:" + userPhone.replace(/[^+\d]/g, '');
+    </script>
+</body>
+</html>
